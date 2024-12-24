@@ -127,6 +127,8 @@ rye sync
 
 训练数据通过`src\data\build_dataset.py`根据`豆瓣电影Top 250相关数据`与`问题模板`，以及`无关问题意图模板`生成。
 
+基础模型请下载并存放至`src\NLP\bert_intent_slot`或其他目录，注意修改train.py中的相关路径即可。
+
 基本流程可以参考修改`src\utils\bert_pipeline.py`中的相关导入。
 
 不想研究可以直接**在项目根目录**执行

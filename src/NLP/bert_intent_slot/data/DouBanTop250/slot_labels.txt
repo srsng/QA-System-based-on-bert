@@ -1,0 +1,11 @@
+[PAD]
+[UNK]
+[O]
+I_movie_name
+B_movie_name
+I_actor_name
+B_actor_name
+I_director_name
+B_director_name
+I_screenwriter_name
+B_screenwriter_name
