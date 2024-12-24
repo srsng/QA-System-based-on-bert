@@ -1,0 +1,45 @@
+[project]
+name = "final"
+version = "0.1.0"
+description = "一个基于模板的QA系统， 特别之处在于使用了Bert模型来实现意图提取与实体提取。"
+authors = [
+    { name = "srsng", email = "srsnng@hotmail.com" }
+]
+dependencies = [
+    "py2neo>=2021.2.4",
+    "pyahocorasick>=2.1.0",
+    "pandas>=2.2.3",
+    "lxml>=5.3.0",
+    "tqdm>=4.66.5",
+    "transformers>=4.47.1",
+    "scikit-learn>=1.6.0",
+    "seqeval>=1.2.2",
+    "torch==2.5.1+cu124",
+    "pytest>=8.3.4",
+    "jupyter>=1.1.1",
+    "notebook>=7.0.0",
+    # "zh-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/zh_core_web_sm-3.8.0/zh_core_web_sm-3.8.0-py3-none-any.whl",
+]
+readme = "README.md"
+requires-python = ">= 3.12"
+
+[project.scripts]
+"final" = "final:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/final"]
+
+[[tool.rye.sources]]
+name = "pytorch"
+url = "https://download.pytorch.org/whl/cu124"

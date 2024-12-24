@@ -1,0 +1,18 @@
+# python generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+.pytest_cache
+_*.*
+!__*.*
+
+# venv
+.venv
+
+.vscode
+img/*/*.d2
+
+save_model/
