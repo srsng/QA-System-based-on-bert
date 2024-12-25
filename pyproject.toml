@@ -7,7 +7,6 @@ authors = [
 ]
 dependencies = [
     "py2neo>=2021.2.4",
-    "pyahocorasick>=2.1.0",
     "pandas>=2.2.3",
     "lxml>=5.3.0",
     "tqdm>=4.66.5",
@@ -16,8 +15,7 @@ dependencies = [
     "seqeval>=1.2.2",
     "torch==2.5.1+cu124",
     "pytest>=8.3.4",
-    "jupyter>=1.1.1",
-    "notebook>=7.0.0",
+    "requests>=2.28.1",
     # "zh-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/zh_core_web_sm-3.8.0/zh_core_web_sm-3.8.0-py3-none-any.whl",
 ]
 readme = "README.md"
